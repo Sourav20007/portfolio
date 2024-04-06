@@ -1,4 +1,13 @@
 {
+  "scripts": {
+    "dev": "vite",
+    "build": "npm install && npm install --prefix src && npm run build --prefix src",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+
+  },
+
+
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "framer-motion": "^10.16.4",
